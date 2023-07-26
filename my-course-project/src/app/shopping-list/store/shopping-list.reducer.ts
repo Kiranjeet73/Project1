@@ -10,16 +10,16 @@ export interface State  {
 
 
 const intialState = {
-    ingredients : [ 
-        new Ingredient('Apples', 5),
-        new Ingredient('Tomatoes', 10),
+    ingredients : [
+        // new Ingredient('Apples', 5),
+        // new Ingredient('Tomatoes', 10),
       ],
       editedIngredient: null,
       editedIngredientIndex: -1
 
 };
 export function ShoppingListReducer(
-    state = intialState, 
+    state = intialState,
     action :ShoppingListActions.ShoppingListActions
     ) {
   switch(action.type){
@@ -54,7 +54,7 @@ export function ShoppingListReducer(
 
 
 
-        
+
         case ShoppingListActions.DELETE_INGREDIENT:
          return{
          ...state,
